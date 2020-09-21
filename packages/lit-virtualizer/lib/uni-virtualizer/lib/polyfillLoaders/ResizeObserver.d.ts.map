@@ -1,0 +1,1 @@
+{"version":3,"file":"ResizeObserver.d.ts","sourceRoot":"","sources":["../../../../src/lib/uni-virtualizer/lib/polyfillLoaders/ResizeObserver.ts"],"names":[],"mappings":"AAEA,OAAO,CAAC,MAAM,CAAC;IACX,UAAU,cAAc;QACpB,OAAO,CAAC,MAAM,EAAE,OAAO,GAAG,IAAI,CAAC;QAC/B,SAAS,CAAC,MAAM,EAAE,OAAO,GAAG,IAAI,CAAC;QACjC,UAAU,IAAI,IAAI,CAAC;KACtB;CACJ;AAED,wBAA8B,cAAc,iBAE3C"}
