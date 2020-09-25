@@ -65,6 +65,9 @@ let LitVirtualizer = class LitVirtualizer extends LitElement {
     get layout() {
         return this._scroller.layout;
     }
+    get scroller() {
+        return this._scroller;
+    }
     /**
      * Scroll to the specified index, placing that item at the given position
      * in the scroll view.

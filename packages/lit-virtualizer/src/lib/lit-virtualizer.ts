@@ -47,18 +47,18 @@ export class LitVirtualizer<Item, Child extends HTMLElement> extends LitElement 
             this._last = e.detail.last;
         })
     }
-  
+
     connectedCallback() {
         super.connectedCallback();
         this._scroller.container = this;
         this._scroller.scrollTarget = this.scrollTarget;
     }
-  
+
     disconnectedCallback() {
         super.disconnectedCallback();
         this._scroller.container = null;
     }
-  
+
     createRenderRoot() {
         return this;
     }
@@ -95,8 +95,11 @@ export class LitVirtualizer<Item, Child extends HTMLElement> extends LitElement 
     get layout() {
         return this._scroller.layout;
     }
-    
-    
+
+    get scroller() {
+        return this._scroller;
+    }
+
     /**
      * Scroll to the specified index, placing that item at the given position
      * in the scroll view.

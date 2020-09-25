@@ -1,6 +1,7 @@
 import { LitElement } from 'lit-element';
 import { TemplateResult } from 'lit-html';
 import { Type, Layout, LayoutConfig } from './uni-virtualizer/lib/layouts/Layout.js';
+import { VirtualScroller } from './uni-virtualizer/lib/VirtualScroller.js';
 /**
  * A LitElement wrapper of the scroll directive.
  *
@@ -29,6 +30,7 @@ export declare class LitVirtualizer<Item, Child extends HTMLElement> extends Lit
     set renderItem(renderItem: (item: Item, index?: number) => TemplateResult);
     set layout(layout: Layout | Type<Layout> | LayoutConfig);
     get layout(): Layout | Type<Layout> | LayoutConfig;
+    get scroller(): VirtualScroller<Item, Child>;
     /**
      * Scroll to the specified index, placing that item at the given position
      * in the scroll view.
